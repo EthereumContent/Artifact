@@ -5,11 +5,11 @@ This repository contains the artifacts for the paper: *Demystifying Harmful Cont
 
 Specifically, this repository includes **anonymized dataset**, **potentially harmful content**, and **harmful content classification criteria**.
 
-- [`./dataset/`](https://github.com/EthereumContent/Artifact/dataset): The dataset containing 9,148 text segments, 9,528 URLs and 9,931 files extracted from Ethereum transactions. Note that all the data in this dataset has been anonymized and sanitized to remove personal information and prevent security issues. 
+- [`./dataset/`](dataset): The dataset containing 9,148 text segments, 9,528 URLs and 9,931 files extracted from Ethereum transactions. Note that all the data in this dataset has been anonymized and sanitized to remove personal information and prevent security issues. 
 
-- [`./harmful-content/`](https://github.com/EthereumContent/Artifact/harmful-content): We identified 638 potentially harmful cases in the dataset, categorized them, and anonymized the data.
+- [`./harmful-content/`](harmful-content): We identified 638 potentially harmful cases in the dataset, categorized them, and anonymized the data.
 
-- [`./criteria/readme.md`](https://github.com/EthereumContent/Artifact/criteria.csv): The detailed criteria for harmful content classification and example cases.
+- [`./criteria/readme.md`](criteria/readme.md): The detailed criteria for harmful content classification and example cases.
 
 
 ## Introduction
