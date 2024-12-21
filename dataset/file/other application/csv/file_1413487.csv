@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the event sheet was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <show-addaction-links>1</show-addaction-links>
+    <scroll-pos>0</scroll-pos>
+    <conditions-column>120</conditions-column>
+    <actions-namecolumn>21</actions-namecolumn>
+    <condition-namecolumns>
+        <nest>20</nest>
+        <nest>17</nest>
+    </condition-namecolumns>
+    <events />
+</c2uistate>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Common sheet.uistate.xml
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Common sheet.xml ---->
+---------------------------------------------------------------------------------------------------------------------------
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Common sheet</name>
+    <events>
+        <comment>Defines if fullscreen is active or else.</comment>
+        <variable constant="0" name="Fullscreen" sid="572591868848104" static="0" type="number">0</variable>
+        <event-group description="" sid="441320609743452" title="Keyboard shortcuts">
+            <sub-events>
+                <event-group description="" sid="575669606180813" title="F12">
+                    <sub-events>
+                        <event-block sid="200627883859697">
+                            <conditions>
+                                <condition id="21" name="On shortcut" sid="639114437472601" type="Electron">
+                                    <param id="0" name="Tag">&quot;fullscreen&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <comment>If not in fullscreen, toggles fullscreen and marks it as enabled.</comment>
+                                <event-block sid="246504516252417">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="173532915668347" type="System">
+                                            <param id="0" name="Variable">Fullscreen</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set Fullscreen" sid="414535240125850" type="Electron">
+                                            <param id="0" name="State">0</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="852842611417701" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="262242615174513" type="System">
+                                            <param id="0" name="Variable">Fullscreen</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <comment>If already in fullscreen, toggles fullscreen and marks it as disabled.</comment>
+                                <event-block sid="150086771699419">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="257522299584163" type="System">
+                                            <param id="0" name="Variable">Fullscreen</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="8" name="Set Fullscreen" sid="801990145373915" type="Electron">
+                                            <param id="0" name="State">1</param>
+                                        </action>
+                                        <action id="-16" name="Wait" sid="234349397211819" type="System">
+                                            <param id="0" name="Seconds">0.1</param>
+                                        </action>
+                                        <action id="-9" name="Set value" sid="138422859297024" type="System">
+                                            <param id="0" name="Variable">Fullscreen</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="739508802732847" title="ESC">
+                    <sub-events>
+                        <event-block sid="601297250886440">
+                            <conditions>
+                                <condition id="21" name="On shortcut" sid="609930145411392" type="Electron">
+                                    <param id="0" name="Tag">&quot;close&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="1" name="Exit" sid="502459066795434" type="Electron" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Common sheet.xml
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Splash sheet.uistate.xml ---->
+---------------------------------------------------------------------------------------------------------------------------
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the event sheet was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <show-addaction-links>1</show-addaction-links>
+    <scroll-pos>0</scroll-pos>
+    <conditions-column>120</conditions-column>
+    <actions-namecolumn>21</actions-namecolumn>
+    <condition-namecolumns>
+        <nest>20</nest>
+        <nest>17</nest>
+    </condition-namecolumns>
+    <events />
+</c2uistate>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Splash sheet.uistate.xml
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Splash sheet.xml ---->
+---------------------------------------------------------------------------------------------------------------------------
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Splash sheet</name>
+    <events>
+        <include>Common sheet</include>
+        <comment>On start of layout, set window title to Eventlr.</comment>
+        <event-block sid="251917746078790">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="528172336526441" type="System" />
+            </conditions>
+            <actions>
+                <action id="29" name="Set Size" sid="907479543539449" type="Electron">
+                    <param id="0" name="Width">400</param>
+                    <param id="1" name="Height">300</param>
+                    <param id="2" name="Animated">1</param>
+                </action>
+                <action id="30" name="Set title" sid="118451295452074" type="Electron">
+                    <param id="0" name="Title">&quot;Floflis Central | Loading...&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="715117151730533" type="UI">
+                    <param id="0" name="Javascript file">&quot;jquery.min.js&quot;</param>
+                </action>
+                <action id="19" name="Include Javascript file" sid="335393644757179" type="Splash">
+                    <param id="0" name="Javascript file">&quot;script.js&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="943033873081196" type="Splash">
+                    <param id="0" name="CSS file">&quot;style.css&quot;</param>
+                </action>
+                <action disabled="1" id="2" name="Import CSS file" sid="996963830421965" type="Splash">
+                    <param id="0" name="CSS file">&quot;dark-common.css&quot;</param>
+                </action>
+                <action id="2" name="Import CSS file" sid="915354609713368" type="Splash">
+                    <param id="0" name="CSS file">&quot;robotofont.css&quot;</param>
+                </action>
+                <action id="45" name="Register a shortcut" sid="470136238014674" type="Electron">
+                    <param id="0" name="Accelerator">&quot;F11&quot;</param>
+                    <param id="1" name="Tag">&quot;fullscreen&quot;</param>
+                </action>
+                <action id="45" name="Register a shortcut" sid="529915642542751" type="Electron">
+                    <param id="0" name="Accelerator">&quot;ESC&quot;</param>
+                    <param id="1" name="Tag">&quot;close&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>On completed loading, go to App layout.</comment>
+        <event-block sid="875769125712946">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="347662910476287" type="System" />
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="664074888471585" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;Exited Splashscreen, going to App screen&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="618180607257783" type="System">
+                    <param id="0" name="Layout">App</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/Event sheets/Splash sheet.xml
+---------------------------------------------------------------------------------------------------------------------------
+
+
+https://github.com/Floflis/Floflis-Central_HTML.git
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/app.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div id="app">
+
+<tag id="dark"></tag>
+
+<header class="navbar navbar-dark navbar-full bg-primary doc-navbar-permanent-clipped" style="    user-select: none;
+    -webkit-app-region: drag;background:#3EB7E5!important">
+<span class="navbar-brand"><img width="100px" src="logotype_smallball.png" style="margin-right:5px"/> Central</span>
+<tag id="ethgasheaderbadge"></tag>
+</header>
+
+<div class="content">
+<article>
+
+<div aria-hidden="true" class="navdrawer navdrawer-permanent navdrawer-permanent-clipped" id="navdrawerPermanentClipped" tabindex="-1">
+<div class="navdrawer-content">
+<nav class="nav navdrawer-nav">
+<ul style="display:block!important" class="nav nav-tabs" id="nav-tab" role="tablist">
+<li class="nav-item"><a onclick=C2('home'); class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><i class="material-icons">home</i> Home</a></li>
+<li class="nav-item"><a onclick=C2('profile'); class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><i class="material-icons">account_circle</i> Profile</a></li>
+<li class="nav-item"><a onclick=C2('playwith'); class="nav-link" id="nav-playwith-tab" data-toggle="tab" href="#nav-playwith" role="tab" aria-controls="nav-playwith" aria-selected="false"><i class="material-icons">playlist_play</i> Play with</a></li>
+<li class="nav-item"><a onclick=C2('personalization'); class="nav-link" id="nav-personalization-tab" data-toggle="tab" href="#nav-personalization" role="tab" aria-controls="nav-personalization" aria-selected="false"><i class="material-icons">format_paint</i> Personalization</a></li>
+<li class="nav-item"><a onclick=C2('about'); class="nav-link" id="nav-about-tab" data-toggle="tab" href="#nav-about" role="tab" aria-controls="nav-about" aria-selected="false"><i class="material-icons">perm_device_information</i> About</a></li>
+<li class="nav-item"><a onclick=C2('moresettings'); class="nav-link" id="nav-moresettings-tab" data-toggle="tab" href="#nav-moresettings" role="tab" aria-controls="nav-moresettings" aria-selected="false"><i class="material-icons">settings</i> More settings</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+
+<div style="margin-left:calc(0px + 280px)" class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">...</div>
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+  <div class="tab-pane fade" id="nav-playwith" role="tabpanel" aria-labelledby="nav-playwith-tab">...</div>
+  <div class="tab-pane fade" id="nav-personalization" role="tabpanel" aria-labelledby="nav-personalization-tab">...</div>
+  <div class="tab-pane fade" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">...</div>
+  <div class="tab-pane fade" id="nav-moresettings" role="tabpanel" aria-labelledby="nav-moresettings-tab">...</div>
+</div>
+
+</article>
+</div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/app.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/home.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <h4 class="alert-heading">Please don't screenshot 📸</h4>
+  <p>🚧 App is under construction 🚧👷‍♀️🏗</p>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
+<div class="backgroundWrap withImage">
+    <tag id="getbg-home"></tag>
+    <div class="gradient"></div>
+  </div>
+<div class="card elevation-24" style="float:right">
+<div class="card-body">
+<center><tag id="usrpic"></tag>
+<h5 class="card-title"><tag id="showusername"></tag></h5>
+<!--<h6 id="hostname" onclick=C2('about-show'); class="card-subtitle mb-2 text-muted linkish" title="Device name">...</h6>-->
+</center>
+
+<style>
+@keyframes djFCwZ{0%{transform:rotate3d(0,1,0,0);}100%{transform:rotate3d(0,1,0,360deg);}}
+
+.balancecount {
+  font-size: 60px;
+  /*display: block;*/
+  font-weight: bold;
+  color: #000;
+}
+</style>
+
+<div title="FLOF tokens">
+<img class="align-left" src="file:///1/img/token.png" alt="FLOF tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="flofbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseExample">
+  <div><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your FLOF at Polygon"> Polygon: <span id="flofbalancepolygon"></span> <span>FLOF</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your FLOF at XDai"> XDai: <span id="flofbalancexdai"></span> <span>FLOF</span></p></div>
+</div>
+
+<ul class="list-group list-group-flush">
+<!-- SOON
+
+SOON
+
+SOON
+SOON
+
+SOON
+<li class="list-group-item"><i class="material-icons">share</i> Peers: <b title="IPFS Web"><img width="16px" src="ipfs.png"/> {peers}</b> <b title="CJDNS Network"><img width="16px" src="cjdns.png"/> {peers}</b> <b title="Yggdrasil Network"><img width="16px" src="yggdrasil.png"/> {peers}</b> (soon)</li>
+<li class="list-group-item"><i class="material-icons">network_check</i> Network speed: (soon)</li>
+
+SOON
+
+SOON
+
+SOON
+SOON
+
+SOON -->
+<li onclick=C2('about-show'); class="list-group-item nav-link"><img width="20px" src="/1/img/logo.png"/> Floflis <tag id="version"></tag> build <b id="build">{build}</b> <span id="osarch">...</span></li>
+</ul>
+<div class="card-footer text-muted" style="color:#24b92a!important"><center><i class="material-icons">check_circle</i> up-to-date</center></div>
+<center><h6 id="hostname" onclick=C2('about-show'); class="card-subtitle mb-2 text-muted linkish" title="Device name">...</h6></center>
+</div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/home.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/playwith.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<center><img width="150px" title="Play with" src="/1/img/humanrepresentation/look-at-phone.png"/></center>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/minetest.svg" title="Minetest"> <b>Fan of <sub>M1necr4ft</sub></b>? Don't afford to buy or loves open-source? <b>Build/play in 3D</b> with Minetest <button onclick=C2('openminetest'); type="button" class="btn btn-info" style="float:right">Open Minetest</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/Yaru/32x32/apps/com.obsproject.Studio.png" title="OBS Studio"> Livestream/record video <button onclick=C2('open-obs'); type="button" class="btn btn-info" style="float:right">Open OBS Studio</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    😈🧚<elenao title="B0ls0n4r0">💩</elenao><element title="Felipe Neto">🧗</element>💎 View and copy/paste emojis and special characters <button onclick=C2('opencharacters'); type="button" class="btn btn-info" style="float:right">Open</button>
+  </div>
+</div>
+
+<!--<div class="card">
+  <div class="card-body">
+    Explore the new Web <button onclick=C2('opennewbrowser'); type="button" class="btn btn-info" style="float:right">Open Beaker browser</button>
+  </div>
+</div>-->
+
+<!--<div class="card">
+  <div class="card-body">
+    Download torrents <button onclick=C2('opentorrent'); type="button" class="btn btn-info" style="float:right">Open BiglyBT</button>
+  </div>
+</div>-->
+
+<!--<div class="card">
+  <div class="card-body">
+    Download videos (from YouTube and other sites) <button onclick=C2('openvideodownload'); type="button" class="btn btn-info" style="float:right">Open Video Download</button>
+  </div>
+</div>-->
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/gbrainy.svg" title="gbrainy"> Train your brain <button onclick=C2('opengbrainy'); type="button" class="btn btn-info" style="float:right">Open gbrainy</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/supertux2.svg" title="Super Tux 2"> Do you love a game from your old Super N1ntend0 Bros? <button onclick=C2('opentux'); type="button" class="btn btn-info" style="float:right">Open Super Tux</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/org.gnome.Games.svg" title="Games"> Play other games, any other <button onclick=C2('opengames'); type="button" class="btn btn-info" style="float:right">Open Games</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/Floflis/32x32/apps/gdevelop.png" title="KeePassX"> Do you like game development? Don't know how to program in Notepad? You shouldn't. Even your grandma can develop a game with it. <button onclick=C2('opengdevelop'); type="button" class="btn btn-info" style="float:right">Open GDevelop</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/keepassxc.svg" title="KeePassX"> Manage your passwords <button onclick=C2('openpasswords'); type="button" class="btn btn-info" style="float:right">Open KeePassX</button>
+  </div>
+</div>
+
+<!--<div class="card">
+  <div class="card-body">
+    Store and send/receive Bitcoin <button onclick=C2('openelecbtc'); type="button" class="btn btn-info" style="float:right">Open Electrum BTC</button>
+  </div>
+</div>-->
+
+<!--<div class="card">
+  <div class="card-body">
+    Share/receive files <button onclick=C2('openarbore'); type="button" class="btn btn-info" style="float:right">Open Arbore</button>
+  </div>
+</div>-->
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/audacity.svg" title="Audacity"> Record voice/audio <button onclick=C2('open-aud'); type="button" class="btn btn-info" style="float:right">Open Audacity</button>
+  </div>
+</div>
+
+<!--<div class="card">
+  <div class="card-body">
+    Run Windows games <button onclick=C2('openlutris'); type="button" class="btn btn-info" style="float:right">Open</button>
+  </div>
+</div>-->
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/32x32/apps/balena-etcher-electron.png" title="Etcher"> Write/Flash ISO images to pendrive <button onclick=C2('openetcher'); type="button" class="btn btn-info" style="float:right">Open Etcher</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/org.gnome.DiskUtility.svg" title="Disk Manager"> Partition, format and see details about your disk <button onclick=C2('opendiskmanager'); type="button" class="btn btn-info" style="float:right">Open Disk Manager</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/hicolor/scalable/apps/org.gnome.Usage.svg" title="Task Manager"> See and manage all open processes and programs <button onclick=C2('opentaskmanager'); type="button" class="btn btn-info" style="float:right">Open Task Manager</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <img width="32px" src="file:///usr/share/icons/Floflis/32x32/apps/terminal.png" title="Neofetch"> Before taking a screen photo... <button onclick="C2('openneofetch');" type="button" class="btn btn-info" style="float:right">Open Neofetch 🤓</button>
+  </div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/playwith.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/personalization.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<ul class="nav nav-justified nav-tabs" id="justifiedTab" role="tablist">
+  <li class="nav-item">
+    <a aria-controls="chbackground" aria-selected="true" class="nav-link active" data-toggle="tab" href="#chbackground" id="chbackground-tab" role="tab"><i class="material-icons">wallpaper</i> Background</a>
+  </li>
+  <!--<li class="nav-item">
+    <a aria-controls="profile" aria-selected="false" class="nav-link" data-toggle="tab" href="#profile" id="profile-tab" role="tab">Profile</a>
+  </li>-->
+  <li class="nav-item">
+    <a aria-controls="lookfeel" aria-selected="false" class="nav-link" data-toggle="tab" href="#lookfeel" id="lookfeel-tab" role="tab"><i class="material-icons">format_paint</i> Change look-and-feel</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="justifiedTabContent">
+
+  <div aria-labelledby="chbackground-tab" class="tab-pane fade show active" id="chbackground" role="tabpanel">
+	<h6>Click <code><i class="material-icons">folder</i> Change</code> to use any background/image you want.</h6>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+	<tag id="getbg-personalization"></tag>
+      <div class="card-body">
+        <h5 class="card-title">Desktop</h5>
+        <p class="card-text">The area of icons that appears after you turn on and login on your device.</p>
+        <button onclick=C2('go-changebg'); class="btn btn-primary"><i class="material-icons">folder</i> Change...</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+	<img width="100%" class="card-img-top" src="background.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Lockscreen</h5>
+        <p class="card-text">This area appears when you lock your device or it is naturally locked after a inactive period.</p>
+        <button href="#" class="btn btn-primary"><i class="material-icons">folder</i> Change...</button>
+      </div>
+    </div>
+  </div>
+</div>
+<h6>or <button href="#" class="btn btn-primary"><i class="material-icons">folder</i> Change both at once...</button></h6>
+  </div>
+
+  <!--<div aria-labelledby="profile-tab" class="tab-pane fade" id="profile" role="tabpanel">...</div>-->
+  
+  <div aria-labelledby="lookfeel-tab" class="tab-pane fade" id="lookfeel" role="tabpanel">
+	<!--<tag id="dark-input"><div class="custom-control custom-switch"><input onclick=C2('darktheme'); class="custom-control-input" id="customSwitch" type="checkbox"><span class="custom-control-track"></span><label class="custom-control-label" for="customSwitch">Dark theme</label></div></tag>-->
+	Soon!
+  </div>
+
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/personalization.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/profile.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div class="backgroundWrap withImage">
+    <tag id="getbg-home"></tag>
+    <div class="gradient"></div>
+  </div>
+<div class="card elevation-24" style="float:right">
+<div class="card-body">
+<center><tag id="usrpic"></tag>
+<h5 class="card-title"><tag id="showfullname"></tag></h5>
+<div onclick="C2('wallet-show');" title="Go to your Wallet ⟠" class="linkish"><img width="16px" src="eth-diamond-glyph.png"> <span><tag id="showethaddress"></tag></span></div>
+<tag id="showtwitterhandle"></tag>
+<br/><span><tag id="showensname"></tag></span>
+<br/><span><tag id="showusername"></tag></span>
+</center>
+
+<style>
+@keyframes djFCwZ{0%{transform:rotate3d(0,1,0,0);}100%{transform:rotate3d(0,1,0,360deg);}}
+
+.balancecount {
+  font-size: 60px;
+  /*display: block;*/
+  font-weight: bold;
+  color: #000;
+}
+</style>
+
+<div title="FLOF tokens">
+<img class="align-left" src="file:///1/img/token.png" alt="FLOF tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="flofbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseExample">
+  <div><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your FLOF at Polygon"> Polygon: <span id="flofbalancepolygon"></span> <span>FLOF</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your FLOF at XDai"> XDai: <span id="flofbalancexdai"></span> <span>FLOF</span></p></div>
+</div>
+<br/>
+<br/>
+
+<span>Estimated total USD you hold: $<tag id="totalusdbalance1"></tag></span>
+<br/>
+<br/>
+
+<center><h6 id="hostname" onclick=C2('about-show'); class="card-subtitle mb-2 text-muted linkish" title="Device name">...</h6></center>
+</div>
+</div>
+
+<ul class="nav nav-justified nav-tabs" id="profileTabs" role="tablist">
+  <li class="nav-item">
+    <a aria-controls="main" aria-selected="true" class="nav-link active" data-toggle="tab" href="#main" id="main-tab" role="tab"><i class="material-icons">home</i> Main</a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="friends" aria-selected="false" class="nav-link" data-toggle="tab" href="#friends" id="friends-tab" role="tab"><i class="material-icons">people</i> Friends</a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="wallet" aria-selected="false" class="nav-link" data-toggle="tab" href="#wallet" id="wallet-tab" role="tab"><i class="material-icons">account_balance_wallet</i> Wallet <span class="badge green">$<tag id="totalusdbalance2"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="inventory" aria-selected="false" class="nav-link" data-toggle="tab" href="#inventory" id="inventory-tab" role="tab"><i class="material-icons">inbox</i> Inventory</a>
+  </li>
+</ul>
+
+<div class="tab-content" id="justifiedTabContent">
+
+  <div aria-labelledby="main-tab" class="tab-pane fade show active" id="main" role="tabpanel">
+	Welcome!
+  </div>
+  
+  <div aria-labelledby="friends-tab" class="tab-pane fade" id="friends" role="tabpanel">
+	Soon!
+  </div>
+  
+  <div aria-labelledby="wallet-tab" class="tab-pane fade" id="wallet" role="tabpanel">
+  
+<div title="ETH tokens">
+<span>ETH</span><img class="align-left" src="ethtoken.svg" alt="ETH tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="ethbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseETHbreakdown" role="button" aria-expanded="false" aria-controls="collapseETHbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseETHbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your ETH at Ethereum"> Ethereum: <span id="ethbalanceethereum"></span> <span>ETH</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your ETH at Polygon"> Polygon: <span id="ethbalancepolygon"></span> <span>ETH</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your ETH at XDai"> XDai: <span id="ethbalancexdai"></span> <span>ETH</span></p></div>
+</div>
+<hr/>
+  
+<div title="FLOF tokens">
+<span>FLOF</span><img class="align-left" src="file:///1/img/token.png" alt="FLOF tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="flofbalancetotal-profilewallet"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseExample">
+  <div><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your FLOF at Polygon"> Polygon: <span id="flofbalancepolygon-profilewallet"></span> <span>FLOF</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your FLOF at XDai"> XDai: <span id="flofbalancexdai-profilewallet"></span> <span>FLOF</span></p></div>
+</div>
+<hr/>
+
+<div title="PLA tokens">
+<span>PLA</span><img class="align-left" src="platoken.png" alt="PLA tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="plabalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapsePLAbreakdown" role="button" aria-expanded="false" aria-controls="collapsePLAbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapsePLAbreakdown">
+  <div><!--<p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your PLA at Ethereum"> Ethereum: <span id="plabalanceethereum"></span> <span>PLA</span></p>--><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your PLA at Polygon"> Polygon: <span id="plabalancepolygon"></span> <span>PLA</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your PLA at XDai"> XDai: <span id="plabalancexdai"></span> <span>PLA</span></p></div>
+</div>
+<hr/>
+
+<div title="GAME tokens">
+<span>GAME</span><img class="align-left" src="gametoken.png" alt="GAME tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="gamebalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseGAMEbreakdown" role="button" aria-expanded="false" aria-controls="collapseGAMEbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseGAMEbreakdown">
+  <div><!--<p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your GAME at Ethereum"> Ethereum: <span id="gamebalanceethereum"></span> <span>GAME</span></p>--><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your GAME at Polygon"> Polygon: <span id="gamebalancepolygon"></span> <span>GAME</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your GAME at XDai"> XDai: <span id="gamebalancexdai"></span> <span>GAME</span></p></div>
+</div>
+<hr/>
+
+<center><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseMoreTokens" role="button" aria-expanded="false" aria-controls="collapseMoreTokens" title="More tokens">+</a></center>
+<div class="collapse" id="collapseMoreTokens">
+
+<div title="MANA tokens">
+<span>MANA</span><img class="align-left" src="manatoken.svg" alt="MANA tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="manabalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseMANAbreakdown" role="button" aria-expanded="false" aria-controls="collapseMANAbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseMANAbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your MANA at Ethereum"> Ethereum: <span id="manabalanceethereum"></span> <span>MANA</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your MANA at Polygon"> Polygon: <span id="manabalancepolygon"></span> <span>MANA</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your MANA at XDai"> XDai: <span id="manabalancexdai"></span> <span>MANA</span></p></div>
+</div>
+<hr/>
+
+<div title="SAND tokens">
+<span>SAND</span><img class="align-left" src="sandtoken.svg" alt="SAND tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="sandbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseSANDbreakdown" role="button" aria-expanded="false" aria-controls="collapseSANDbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseSANDbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your SAND at Ethereum"> Ethereum: <span id="sandbalanceethereum"></span> <span>SAND</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your SAND at Polygon"> Polygon: <span id="sandbalancepolygon"></span> <span>SAND</span></p></div>
+</div>
+<hr/>
+
+<div title="DAI tokens">
+<span>DAI</span><img class="align-left" src="daitoken.svg" alt="DAI tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="daibalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseDAIbreakdown" role="button" aria-expanded="false" aria-controls="collapseDAIbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseDAIbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your DAI at Ethereum"> Ethereum: <span id="daibalanceethereum"></span> <span>DAI</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your DAI at Polygon"> Polygon: <span id="daibalancepolygon"></span> <span>DAI</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your DAI at XDai"> XDai: <span id="daibalancexdai"></span> <span>DAI</span></p></div>
+</div>
+<hr/>
+
+<div title="GNO tokens">
+<span>GNO</span><img class="align-left" src="gnotoken.svg" alt="GNO tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="gnobalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseGNObreakdown" role="button" aria-expanded="false" aria-controls="collapseGNObreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseGNObreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your GNO at Ethereum"> Ethereum: <span id="gnobalanceethereum"></span> <span>GNO</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your GNO at Polygon"> Polygon: <span id="gnobalancepolygon"></span> <span>GNO</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your GNO at XDai"> XDai: <span id="gnobalancexdai"></span> <span>GNO</span></p></div>
+</div>
+<hr/>
+
+<div title="MATIC tokens">
+<span>MATIC</span><img class="align-left" src="/1/img/networks/polygon.svg" alt="MATIC tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="maticbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseMATICbreakdown" role="button" aria-expanded="false" aria-controls="collapseMATICbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseMATICbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your MATIC at Ethereum"> Ethereum: <span id="maticbalanceethereum"></span> <span>MATIC</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your MATIC at Polygon"> Polygon: <span id="maticbalancepolygon"></span> <span>MATIC</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your MATIC at XDai"> XDai: <span id="maticbalancexdai"></span> <span>MATIC</span></p></div>
+</div>
+<hr/>
+
+<div title="SLP tokens">
+<span>SLP</span><img class="align-left" src="slptoken.svg" alt="SLP tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="slpbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseSLPbreakdown" role="button" aria-expanded="false" aria-controls="collapseSLPbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseSLPbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your SLP at Ethereum"> Ethereum: <span id="slpbalanceethereum"></span> <span>SLP</span></p><!--<p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your SLP at Polygon"> Polygon: <span id="slpbalancepolygon"></span> <span>SLP</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your SLP at XDai"> XDai: <span id="slpbalancexdai"></span> <span>SLP</span></p>--></div>
+</div>
+<hr/>
+
+<div title="AXS tokens">
+<span>AXS</span><img class="align-left" src="axstoken.svg" alt="AXS tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="axsbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseAXSbreakdown" role="button" aria-expanded="false" aria-controls="collapseAXSbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseAXSbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your AXS at Ethereum"> Ethereum: <span id="axsbalanceethereum"></span> <span>AXS</span></p><!--<p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your AXS at Polygon"> Polygon: <span id="axsbalancepolygon"></span> <span>AXS</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your AXS at XDai"> XDai: <span id="axsbalancexdai"></span> <span>AXS</span></p>--></div>
+</div>
+<hr/>
+
+<div title="USDC tokens">
+<span>USDC</span><img class="align-left" src="usdctoken.svg" alt="USDC tokens" style="animation: 5s cubic-bezier(0.83, 0, 0.17, 1) 0s infinite normal none running djFCwZ;padding: 2rem 0px 0px;filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 2px 4px);" width="48px">
+<br/><h3 id="usdcbalancetotal"></h3>
+</div><a class="btn btn-outline-info" data-toggle="collapse" href="#collapseUSDCbreakdown" role="button" aria-expanded="false" aria-controls="collapseUSDCbreakdown" title="Balance Breakdown">+</a>
+<div class="collapse" id="collapseUSDCbreakdown">
+  <div><p><img width="16px" src="/1/img/networks/ethereum.svg" alt="" title="Your USDC at Ethereum"> Ethereum: <span id="usdcbalanceethereum"></span> <span>USDC</span></p><p><img width="16px" src="/1/img/networks/polygon.svg" alt="" title="Your USDC at Polygon"> Polygon: <span id="usdcbalancepolygon"></span> <span>USDC</span></p><p><img width="16px" src="/1/img/networks/xdai.svg" alt="" title="Your USDC at XDai"> XDai: <span id="usdcbalancexdai"></span> <span>USDC</span></p></div>
+</div>
+<hr/>
+
+<!--<center>Want to view even more tokens you may have? Access Zerion</center>-->
+</div>
+
+<center><span>Do you want more from your wallet? 🧚💫</span> <button onclick=C2('openframe'); class="btn btn-info"><i class="material-icons">account_balance_wallet</i> Open Frame wallet</button></center>
+  </div>
+  
+  <div aria-labelledby="inventory-tab" class="tab-pane fade" id="inventory" role="tabpanel">
+	<p>Soon!</p>
+	<p>We will list your PoAPs, PFPs, pets, paintings, Plasmmer products and other NFTs that don't start with "P".</p>
+	<ul class="nav nav-justified nav-tabs" id="inventoryTabs" role="tablist">
+  <li class="nav-item">
+    <a aria-controls="poaps" aria-selected="true" class="nav-link active" data-toggle="tab" href="#poaps" id="poaps-tab" role="tab">PoAPs <span class="badge blue"><tag id="badgecount_inventory-poaps"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="trophies" aria-selected="false" class="nav-link" data-toggle="tab" href="#trophies" id="trophies-tab" role="tab">Trophies <span class="badge blue"><tag id="badgecount_inventory-trophies"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="avatars" aria-selected="false" class="nav-link" data-toggle="tab" href="#avatars" id="avatars-tab" role="tab">PFPs/Avatars <span class="badge blue"><tag id="badgecount_inventory-avatars"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="backgrounds" aria-selected="false" class="nav-link" data-toggle="tab" href="#backgrounds" id="backgrounds-tab" role="tab">Backgrounds <span class="badge blue"><tag id="badgecount_inventory-backgrounds"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="domains" aria-selected="false" class="nav-link" data-toggle="tab" href="#domains" id="domains-tab" role="tab">Domains <span class="badge blue"><tag id="badgecount_inventory-domains"></tag></span></a>
+  </li>
+  <li class="nav-item">
+    <a aria-controls="metaversestuff" aria-selected="false" class="nav-link" data-toggle="tab" href="#metaversestuff" id="metaversestuff-tab" role="tab">Metaverse Stuff <span class="badge blue"><tag id="badgecount_inventory-metaversestuff"></tag></span></a>
+  </li>
+</ul>
+
+<div class="tab-content" id="justifiedTabContent">
+
+  <div aria-labelledby="poaps-tab" class="tab-pane fade show active" id="poaps" role="tabpanel">
+	Soon!
+  </div>
+  
+  <div aria-labelledby="trophies-tab" class="tab-pane fade" id="trophies" role="tabpanel">
+	Soon!
+  </div>
+  
+  <div aria-labelledby="avatars-tab" class="tab-pane fade" id="avatars" role="tabpanel">
+	Soon!
+  </div>
+
+  <div aria-labelledby="backgrounds-tab" class="tab-pane fade" id="backgrounds" role="tabpanel">
+	(soon, subscribe via Alerts)
+  </div>
+  
+  <div aria-labelledby="domains-tab" class="tab-pane fade" id="domains" role="tabpanel">
+	Soon!
+  </div>
+  
+  <div aria-labelledby="metaversestuff-tab" class="tab-pane fade" id="metaversestuff" role="tabpanel">
+	<ul class="nav nav-justified nav-tabs" id="inventorymetaverseTabs" role="tablist">
+ 	 <li class="nav-item">
+  	  <a aria-controls="lands" aria-selected="true" class="nav-link active" data-toggle="tab" href="#lands" id="lands-tab" role="tab">Lands <span class="badge blue"><tag id="badgecount_inventory-lands"></tag></span></a>
+ 	 </li>
+  	<li class="nav-item">
+    	<a aria-controls="metaitems" aria-selected="false" class="nav-link" data-toggle="tab" href="#metaitems" id="metaitems-tab" role="tab">Items <span class="badge blue"><tag id="badgecount_inventory-metaitems"></tag></span></a>
+ 	 </li>
+ 	 <li class="nav-item">
+ 	   <a aria-controls="paintings" aria-selected="false" class="nav-link" data-toggle="tab" href="#paintings" id="paintings-tab" role="tab">Paintings <span class="badge blue"><tag id="badgecount_inventory-paintings"></tag></span></a>
+  	</li>
+	  <li class="nav-item">
+    	<a aria-controls="wearables" aria-selected="false" class="nav-link" data-toggle="tab" href="#wearables" id="wearables-tab" role="tab">Wearables <span class="badge blue"><tag id="badgecount_inventory-wearables"></tag></span></a>
+ 	 </li>
+ 	 <li class="nav-item">
+  	  <a aria-controls="pets" aria-selected="false" class="nav-link" data-toggle="tab" href="#pets" id="pets-tab" role="tab">Pets <span class="badge blue"><tag id="badgecount_inventory-pets"></tag></span></a>
+ 	 </li>
+	</ul>
+	
+	<div class="tab-content" id="justifiedTabContent">
+
+ 	 <div aria-labelledby="lands-tab" class="tab-pane fade show active" id="lands" role="tabpanel">
+		Soon!
+ 	 </div>
+  
+ 	 <div aria-labelledby="metaitems-tab" class="tab-pane fade" id="metaitems" role="tabpanel">
+		Soon!
+ 	 </div>
+  
+ 	 <div aria-labelledby="paintings-tab" class="tab-pane fade" id="paintings" role="tabpanel">
+		Soon!
+ 	 </div>
+
+ 	 <div aria-labelledby="wearables-tab" class="tab-pane fade" id="wearables" role="tabpanel">
+		Soon!
+ 	 </div>
+  
+ 	 <div aria-labelledby="pets-tab" class="tab-pane fade" id="pets" role="tabpanel">
+		Soon!
+ 	 </div>
+	</div>
+  </div>
+
+</div>
+  </div>
+
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/profile.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/about.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div class="card elevation-24" style="float:right">
+<div class="card-body">
+<center><tag id="osicon"></tag>
+<!--h5 class="card-title">Floflis tag id=version></tag</h5-->
+<h5 class="card-title"></h5>
+<h6 class="card-subtitle mb-2 text-muted">(c) <tag id="year"></tag>. Build <b id="build"></b></h6></center>
+<ul class="list-group list-group-flush">
+<li class="list-group-item" title="Device name"><i class="material-icons">devices</i> <b id="hostname">...</b></li>
+<li class="list-group-item" title="OS CPU architecture"><i class="material-icons">developer_board</i> <b id="osarch">...</b> Operating System</li>
+</ul>
+<div class="card-footer text-muted" style="color:#24b92a!important"><center><i class="material-icons">check_circle</i> up-to-date</center></div>
+<center><h6 onclick=C2('moreinfo-show'); class="card-subtitle mb-2 text-muted linkish"><i class="material-icons">info</i> More system info</h6><br/>
+<h6 onclick=C2('moresettings-show'); class="card-subtitle mb-2 text-muted linkish"><i class="material-icons">settings</i> More settings</h6>
+</center>
+</div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/about.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/moresettings.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Access all settings</h4>
+  <p>While Floflis Central isn't done, a lot of settings will be missing here (yet).</p>
+  <hr>
+  <p class="mb-0">Floflis Central focus more on settings that are relative to Floflis.</p>
+</div>
+
+<img class="align-left" width="150px" src="/1/img/humanrepresentation/action-create.png"/>
+<br/>
+<br/>
+<button onclick=C2('gnomesettings'); class="btn btn-info"><i class="material-icons">settings_applications</i> Open classical settings</button>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/moresettings.html
+---------------------------------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------------------------------
+/media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/setup/setup.html ---->
+---------------------------------------------------------------------------------------------------------------------------
+<div id="app">
+
+<tag id="dark"></tag>
+
+<header class="navbar navbar-dark navbar-full bg-primary doc-navbar-permanent-clipped" style="    user-select: none;
+    -webkit-app-region: drag;background:green!important">
+<span class="navbar-brand">Installing Floflis...</span>
+</header>
+
+<div class="content">
+<article>
+
+<div class="stepper-vert" id="setupstepper">
+  <div class="stepper active">
+    <div class="stepper-icon">1</div>
+    <span class="stepper-text"><i class="material-icons">nature</i> Creating tree folder above root</span>
+  </div>
+  <div class="stepper">
+    <div class="stepper-icon">2</div>
+    <span class="stepper-text"><i class="material-icons">folder_open</i> Creating sys folder</span>
+  </div>
+  <div class="stepper">
+    <div class="stepper-icon">3</div>
+    <span class="stepper-text"><i class="material-icons">bubble_chart</i> Setting Open Badges</span>
+  </div>
+  <div class="stepper">
+    <div class="stepper-icon">4</div>
+    <span class="stepper-text"><i class="material-icons">apps</i> Installing apps</span>
+  </div>
+  <div class="stepper">
+    <div class="stepper-icon">5</div>
+    <span class="stepper-text"><i class="material-icons">videogame_asset</i> Creating folders for games and HTML5 files</span>
+  </div>
+  <div class="stepper">
+    <div class="stepper-icon">6</div>
+    <span class="stepper-text"><i class="material-icons">devices</i> Set device</span>
+  </div>
+</div>
+
+<div class="scroller setupstatus" id="setupcontent">
+<div class="progress"><div class="progress-bar progress-bar-indeterminate" role="progressbar"></div></div>
+<h1 id="setupstatus"></h1>
+</div>
+
+</article>
+</div>
+</div>
+---------------------------------------------------------------------------------------------------------------------------
+<---- /media/daniell/B/git/Floflis/HTML5/Central/c2export/HTML/setup/setup.html
+---------------------------------------------------------------------------------------------------------------------------

@@ -1,13 +1,13 @@
-# Harmful Content Classification Cretiria
+# Harmful Content Classification Criteria
 We classified potentially harmful content in Ethereum transactions into six categories: **Privacy Violation**, **Sexual Content**, **Discrimination**, **On-chain Crime**, **Personal Threat**, and **Child Maltreatment**.
-Here, we provide detailed classification criteria and corresponding cases.
+Below, we provide detailed classification criteria and corresponding cases.
 
 ## 1. Privacy Violation
 Privacy Violation refers to acts of disclosing one or more pieces of personal information, including: 
 - Full name
 - Email
 - Phone number
-- ID Number
+- ID number
 - Address
 - Photos containing personal facial information
 - Chat records without the consent of the participants
@@ -23,9 +23,9 @@ J**** J****** - **********@gmail.com
 ## 2. Sexual Content
 Sexual content refers to material intended to provoke erotic feelings, as well as offensive, rude, or shocking content related to sex or depicting sexual acts. Specifically, the following content will be considered as sexual content:
 - Pornography
-- Sex service
+- Sex services
 - Obscene insults related to sex
-- Images or video containing private body parts
+- Images or videos containing private body parts
 
 Example (anonymized): 
 ```
@@ -36,7 +36,7 @@ Dаting fоr sеx | Canаdа: http://****.net/*****************
 Discrimination refers to content that insults or expresses prejudice against different groups of people, or uses discriminatory terms. 
 
 Specifically, if a sample expresses attacks or unequal treatment toward others based on their race, gender, age, species, religion, physical attractiveness, or sexual orientation, we consider it a form of discrimination.
-Besides, We use the [Hatebase](https://hatebase.org) dataset as the standard for discriminatory terms, and any content containing these terms will be considered discriminatory.
+Additionally, we use the [Hatebase](https://hatebase.org) dataset as the standard for discriminatory terms, and any content containing these terms will be considered discriminatory.
 Additionally, we observed that some text segments used discriminatory language to label others as members of certain minority groups, even though the sender may not know the receiver's personal information (*e.g.*, sexual orientation). Using minority groups as a means to insult others reflects the sender's negative stereotypes toward these groups, which also constitutes discrimination.
 
 Example (anonymized): 
@@ -51,11 +51,11 @@ The *United Nations Convention Against Transnational Organized Crime* defines a 
 - Terrorism
 - Smuggling
 - Human trafficking
-- Manufacture and trafficking in firearms
+- Manufacture and trafficking of firearms
 - Corruption
 - Other serious crimes (*i.e.*, acts that are punishable by a maximum term of at least four years of deprivation of liberty or a more severe penalty)
 
-We use this convention as the standard for detecting on-chain crimes. Any content involving conducting criminal activities, encouraging crimes, or teaching criminal methods is categorized under this type.
+We use this convention as the standard for detecting on-chain crimes. Any content involving the commission of criminal activities, encouraging crimes, or teaching criminal methods is categorized under this type.
 
 Example (anonymized): 
 ```
