@@ -13,7 +13,7 @@ Privacy Violation refers to acts of disclosing one or more pieces of personal in
 - Chat records without the consent of the participants
 - etc.
 
-Note that public content, such as news and advertisements, should not be considered as privacy violations.
+Note that public content, such as news, declarations, and advertisements, should not be considered as privacy violations.
 
 Examples (anonymized):
 ```
@@ -29,7 +29,7 @@ Sexual content refers to material intended to provoke erotic feelings, as well a
 
 Example (anonymized): 
 ```
-Dаting fоr sеx | Canаdа: http://****.net/*****************
+Sex dating in Australiа | Girls fоr sex in Australia: https://onlineuniversalwork.com/***************
 ```
 
 ## 3. Discrimination
